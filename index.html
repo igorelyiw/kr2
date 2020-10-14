@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<body>
+    
+    <header >
+        <div id="editBtn">
+            <button type="button" id="ok" class="btn btn-warning">edit</button>
+          <button type="button" class="btn btn-outline-dark" id="table" data-toggle="modal" data-target="#tableModal"><i class="fas fa-table" ></i></button>
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="tableModal" tabindex="-1" aria-labelledby="tableModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="tableModalLabel">Create table</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <div class="tableCreate">
+                  <div id="countTr">
+                    <form action="" name="formTable"></form>
+                 <label for="">Count TR: <br>  
+<input type="text" name="numTr">
+</label><br>
+<label for="">Width of TD: <br>  
+  <input type="text" id="widthTd">
+  </label><br>
+  <label for="">Width of border: <br>  
+    <input type="text" id="widthBorder">
+    </label>
+
+                  </div>
+                  <div id="countTd">
+                    <label for="">Count TD: <br>  
+                      <input type="text" ="numTd">
+                      </label><br>
+                      <label for="">Height of TD: <br>  
+                        <input type="text" id="heightTd">
+                        </label><br>
+                        <label for="">Style of border: <br>  
+                          <select name="select1" id="select1">
+<option value="">choose style</option>
+<option value="dotted">dotted</option>
+<option value="dashed">dashed</option>
+<option value="solid">solid</option>
+<option value="double">double</option>
+<option value="groove">groove</option>
+<option value="inset">inset</option>
+
+                          </select>
+
+                          </label>
+                          <label for="">Color of border: <br>  
+                            <select name="select2" id="select2">
+                              <option value="">Choose color</option>
+
+                              <option value="red">red</option>
+<option value="black">black</option>
+<option value="green">geen</option>
+<option value="blue">blue</option>
+<option value="yellow">yellow</option>
+<option value="gray">gray</option>
+
+
+                            </select>
+  
+                            </label>
+                  </div>
+                  <div id="sms"></div>
+                </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" id="reset table" class="btn btn-danger btn-lg " >Reset</button>
+                  <button type="button" id="tableBtn" class="btn btn-success btn-lg">Create table</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          
+          <button type="button" class="btn btn-outline-dark" id="list"><i class="fas fa-list-ul"></i></button>
+          <button type="button" class="btn btn-outline-dark" id="ul"><i class="fas fa-list-ol"></i></button>
+            
+
+
+
+        </div>
+        <div id="navBtn">
+          <button type="button" class="btn btn-outline-dark" id="edit"> < / ></button>
+            
+        
+         
+          <button type="button" class="btn btn-outline-dark" id="option1"><b>B</b></button>
+          <button type="button" class="btn btn-outline-dark" id="option2"><b><i>I</i></b></button>
+          <button type="button" class="btn btn-outline-dark" id="option3"><b style="border-bottom: 1px solid;">U</b></button>
+          <button type="button" class="btn btn-outline-dark" id="option4"><b><del >S</del></b></button>
+
+          <button type="button" class="btn btn-outline-dark" id="posL"><i class="fas fa-align-left"></i></button>
+          <button type="button" class="btn btn-outline-dark" id="posC"><i class="fas fa-align-center"></i></button>
+          <button type="button" class="btn btn-outline-dark" id="posR"><i class="fas fa-align-right"></i></button>
+         
+         
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-outline-dark" id="color" data-toggle="modal" data-target="#colorSet">
+  &#9998;
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="colorSet" tabindex="-1" aria-labelledby="colorSetModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="colorSetModalLabel">Choose Text Color</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="colorBtn">
+        <form action="" name="f1">
+<input type="button" id="changeColor" style="background-color: red;" >
+<input type="button" id="changeColor" style="background-color: coral;" >
+<input type="button" id="changeColor" style="background-color: cornflowerblue;" >
+<input type="button" id="changeColor" style="background-color: crimson;" >
+<input type="button" id="changeColor" style="background-color: darkcyan;" >
+<input type="button" id="changeColor" style="background-color: darkgoldenrod;" >
+<input type="button" id="changeColor" style="background-color: darkgrey;" >
+<input type="button" id="changeColor" style="background-color: darksalmon;" >
+<input type="button" id="changeColor" style="background-color: dimgray;" >
+<input type="button" id="changeColor" style="background-color: gold;" >
+<input type="button" id="changeColor" style="background-color: indigo;" >
+<input type="button" id="changeColor" style="background-color: lawngreeid;">
+</form>
+      </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-outline-dark" id="color" data-toggle="modal" data-target="#pictureSet">
+  <i class="far fa-image"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="pictureSet" tabindex="-1" aria-labelledby="pictureSetModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pictureSetModalLabel">Choose Text Color</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+
+
+        <div class="colorBtn">
+<input type="button" id="buttonColor" class="pictureBtn" value="Colors">
+<input type="button" id="buttonImages" class="pictureBtn" value="Images">
+<input type="button" id="buttonFiles" class="pictureBtn" value="Files">
+        <div id="images">
+          <form action="" name="f2">
+<input type="button" id="changeColor" style="background-image: url(picture/3.jpg);" >
+<input type="button" id="changeColor" style="background-image:url(picture/Chrysanthemum.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Desert.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Hydrangeas.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Jellyfish.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Koala.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Lighthouse.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Penguins.jpg) ;" >
+<input type="button" id="changeColor" style="background-image:url(picture/Tulips.jpg) ;" >
+
+</form>
+        </div>
+        <div id="colorBg">
+        <form action="" name="f3">
+<input type="button" id="changeColor" style="background-color: red;" >
+<input type="button" id="changeColor" style="background-color: coral;" >
+<input type="button" id="changeColor" style="background-color: cornflowerblue;" >
+<input type="button" id="changeColor" style="background-color: crimson;" >
+<input type="button" id="changeColor" style="background-color: darkcyan;" >
+<input type="button" id="changeColor" style="background-color: darkgoldenrod;" >
+<input type="button" id="changeColor" style="background-color: darkgrey;" >
+<input type="button" id="changeColor" style="background-color: darksalmon;" >
+<input type="button" id="changeColor" style="background-color: dimgray;" >
+<input type="button" id="changeColor" style="background-color: gold;" >
+<input type="button" id="changeColor" style="background-color: indigo;" >
+<input type="button" id="changeColor" style="background-color: lawngreeid;">
+</form></div>
+
+<div id="uploadFile"><br>
+<input type="file" id="fileBg">
+<input type="button" id="fileBtn" value="fileBtn">
+
+</div>
+      </div>
+
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+          
+<button type="button" class="btn btn-outline-dark" id="lock" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#exampleModal">
+  <i class="fas fa-lock"></i>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><h2 style="text-align: center;">Sign In</h2></h5>
+       
+      </div>
+      <div class="modal-body">
+        <input type="text" class="textForm" id="login" placeholder="Login here..."><br>
+        <input type="text" class="textForm" id="pass" placeholder="Password here...">
+<div id="mes"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="sign" data-dismiss="modal" >Sign In</button>
+
+        <!-- <button type="button" id="sign" class="btn btn-primary"  ></button> -->
+      </div>
+    </div>
+  </div>
+</div>
+          <div class="dropdown">
+            <!-- <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                &Alpha;
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">Arial</button>
+              <button class="dropdown-item" type="button">Georgia</button>
+              <button class="dropdown-item" type="button">Inpact</button>
+              <button class="dropdown-item" type="button">Tahoma</button>
+              <button class="dropdown-item" type="button">Verdana</button>
+
+            </div> -->
+          </div>
+          
+         
+        </div>
+    </header>
+    <div id="window">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempora.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, tempora.</p>
+</div>
+        <textarea name="" id="textarea" cols="30" rows="10">
+
+
+
+
+
+
+
+
+        </textarea>
+
+
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

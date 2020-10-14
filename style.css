@@ -1,0 +1,114 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1500px;
+    height: 640px;
+}
+#textarea{
+    width: 100%;
+    height: 850px;
+    resize: none;
+    padding: 50px;
+display: none;
+}
+#window{
+    width: 100%;
+    height: 850px;
+    padding: 50px;
+    background-size: cover;
+background-repeat: no-repeat
+}
+i {
+    font-family: fontawesome !important;
+    }
+.font{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
+.under{
+    text-decoration: underline;
+}
+.lineT{
+    text-decoration: line-through;
+}
+#editBtn{
+    display: none;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: red;
+   text-align: center;
+}
+#posL{
+    margin-left: 10px;
+}
+#posR{
+    margin-right: 10px;
+}
+#option1{
+    margin-left: 10px;
+}
+
+#mes{
+    display: block;
+    color: red;
+    text-align: left;
+}
+#colorBox{
+    width: 400px;
+    height: 300px;
+    background-color: wheat;
+}
+.colorBtn{
+    display: flex;
+    flex-wrap: wrap;
+}
+#changeColor{
+    width: 90px;
+    height: 90px;
+    border-radius: 15%;
+    background-color: wheat;
+    margin: 10px;
+    outline: none;
+background-size: cover;
+}
+  #sign{
+      width: 100%;
+    }
+    #exampleModal{
+        text-align: center;
+    }
+    .textForm{
+        width: 95%;
+        padding: 10px;
+        margin: 10px;
+    }
+    .red{
+        outline: 1px solid red;
+    }
+    .pictureBtn{
+        color: skyblue;
+        background: none;
+        outline: none;
+        margin-left: 10px;
+        border: none;
+    }
+    #images{
+        display: none;
+    }
+    #uploadFile{
+        display: none;
+    }
+    .tableCreate{
+        display: flex;
+        justify-content: space-around;
+        text-align: left;
+    }
+    
